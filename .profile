@@ -30,4 +30,6 @@ alias enable_cache="declare +x CLI_LOADER_DISABLE_CACHE=1"
 alias disable_cache="declare -x CLI_LOADER_DISABLE_CACHE=1"
 alias tst="cli .group --self-test"
 
+# rvm madness; rvm redefines cd and Fs it all up
 unset MY_RUBY_HOME
+unset cd
